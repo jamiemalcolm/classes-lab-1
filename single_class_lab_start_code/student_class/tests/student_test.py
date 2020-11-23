@@ -4,7 +4,7 @@ from src.student import Student
 
 class TestStudent(unittest.TestCase):
     def setUp(self):
-        self.student = Student("Ada", "E42")
+        self.student = Student("Ada", "E42", "Python", 35)
 
    # @unittest.skip("delete this line to run the test")
     def test_student_has_name(self):
@@ -31,4 +31,8 @@ class TestStudent(unittest.TestCase):
    # @unittest.skip("delete this line to run the test")
     def test_student_has_favourite_language(self):
         self.assertEqual(
-            "I love Python", self.student.say_favourite_language("Python"))
+            "I love Python", self.student.say_favourite_language())
+
+    def test_get_commute_time(self):
+        self.assertEqual("It takes me 35 minutes to get to CodeClan",
+                         self.student.get_commute_time("Ada"))
