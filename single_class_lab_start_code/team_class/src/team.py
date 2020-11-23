@@ -28,7 +28,7 @@ class Team:
             self.results["draw"] += 1
 
     def play_game(self, won):
-        if won == True:
+        if won:
             self.points += 3
 # add multiple players
 
