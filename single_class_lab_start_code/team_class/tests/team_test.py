@@ -1,9 +1,11 @@
 import unittest
 from src.team import Team
 
+
 class TestTeam(unittest.TestCase):
     def setUp(self):
-        players = ["Derice Bannock", "Sanka Coffie", "Junior Bevil", "Yul Brenner"]
+        players = ["Derice Bannock", "Sanka Coffie",
+                   "Junior Bevil", "Yul Brenner"]
         self.team = Team("Cool Runnings", players, "Irv Blitzer")
 
     @unittest.skip("delete this line to run the test")
@@ -40,7 +42,7 @@ class TestTeam(unittest.TestCase):
     @unittest.skip("delete this line to run the test")
     def test_team_has_points(self):
         self.assertEqual(0, self.team.points)
-        
+
     @unittest.skip("delete this line to run the test")
     def test_play_game__win(self):
         self.team.play_game(True)
