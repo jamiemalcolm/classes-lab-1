@@ -30,3 +30,9 @@ class Team:
     def play_game(self, won):
         if won == True:
             self.points += 3
+# add multiple players
+
+    def add_multiple_players(self, player_name1, player_name2, player_name3):
+        self.players.append(player_name1)
+        self.players.append(player_name2)
+        self.players.append(player_name3)

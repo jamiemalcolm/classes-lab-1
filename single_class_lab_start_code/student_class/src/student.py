@@ -8,3 +8,6 @@ class Student:
 
     def say_favourite_language(self, fav_lang):
         return "I love " + fav_lang
+
+
+# add morew properties and test for them

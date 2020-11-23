@@ -54,7 +54,25 @@ class TestTeam(unittest.TestCase):
         self.assertEqual(0, self.team.points)
 
    # @unittest.skip("delete this line to run the test")
-    def test_league_table(self):
+    def test_league_table__draw(self):
         result = "draw"
         self.team.league_table(result)
         self.assertEqual(1, self.team.results["draw"])
+
+    def test_league_table__win(self):
+        result = "win"
+        self.team.league_table(result)
+        self.assertEqual(1, self.team.results["win"])
+
+    def test_league_table__loss(self):
+        result = "loss"
+        self.team.league_table(result)
+        self.assertEqual(1, self.team.results["loss"])
+
+    def test_add_multiple_players(self):
+        player_name1 = "jimmy nutron"
+        player_name2 = "issac newton"
+        player_name3 = "dave chappel"
+        self.team.add_multiple_players(
+            player_name1, player_name2, player_name3)
+        self.assertEqual(7, len(self.team.players))
