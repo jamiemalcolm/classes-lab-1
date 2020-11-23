@@ -28,7 +28,7 @@ class TestStudent(unittest.TestCase):
     def test_student_can_talk(self):
         self.assertEqual("I can talk!", self.student.talk())
 
-    @unittest.skip("delete this line to run the test")
+   # @unittest.skip("delete this line to run the test")
     def test_student_has_favourite_language(self):
         self.assertEqual(
             "I love Python", self.student.say_favourite_language("Python"))
