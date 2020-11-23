@@ -19,7 +19,7 @@ class TestStudent(unittest.TestCase):
         self.student.name = "Mike"
         self.assertEqual("Mike", self.student.name)
 
-    @unittest.skip("delete this line to run the test")
+   # @unittest.skip("delete this line to run the test")
     def test_student_can_change_cohort(self):
         self.student.cohort = "G21"
         self.assertEqual("G21", self.student.cohort)
