@@ -52,3 +52,9 @@ class TestTeam(unittest.TestCase):
     def test_play_game__lose(self):
         self.team.play_game(False)
         self.assertEqual(0, self.team.points)
+
+   # @unittest.skip("delete this line to run the test")
+    def test_league_table(self):
+        result = "draw"
+        self.team.league_table(result)
+        self.assertEqual(1, self.team.results["draw"])
