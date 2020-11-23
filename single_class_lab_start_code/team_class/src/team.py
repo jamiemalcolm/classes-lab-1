@@ -33,6 +33,4 @@ class Team:
 # add multiple players
 
     def add_multiple_players(self, player_name1, player_name2, player_name3):
-        self.players.append(player_name1)
-        self.players.append(player_name2)
-        self.players.append(player_name3)
+        self.players.extend(player_name1, player_name2, player_name3)
