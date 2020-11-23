@@ -20,7 +20,7 @@ class TestTeam(unittest.TestCase):
     def test_team_has_coach(self):
         self.assertEqual("Irv Blitzer", self.team.coach)
 
-    @unittest.skip("delete this line to run the test")
+   # @unittest.skip("delete this line to run the test")
     def test_coach_can_be_changed(self):
         self.team.coach = "John Candy"
         self.assertEqual("John Candy", self.team.coach)
